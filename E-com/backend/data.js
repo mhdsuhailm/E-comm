@@ -1,0 +1,72 @@
+import bcrypt from 'bcryptjs';
+const data = {
+  users: [
+    {
+      name: 'suhail',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'muhammad',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+    products: [
+      {
+        // _id: '1',
+        name: 'Hand bag',
+        slug: 'designer bag',
+        category: 'bag',
+        image: '/images/p1.jpg', // 679px × 829px
+        price: 120,
+        countInStock: 10,
+        brand: 'aura',
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality shirt',
+      },
+      {
+        // _id: '2',
+        name: 'Coir Basket ',
+        slug: 'Coir Basket',
+        category: '',
+        image: '/images/p2.jpg',
+        price: 250,
+        countInStock: 60,
+        brand: 'Aura',
+        rating: 4.0,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+      {
+        // _id: '3',
+        name: 'Hand Made Paper Craft',
+        slug: 'craft',
+        category: 'decors',
+        image: '/images/p3.jpg',
+        price: 25,
+        countInStock: 0,
+        brand: 'aura',
+        rating: 4.5,
+        numReviews: 14,
+        description: 'high quality product',
+      },
+      {
+        //  _id: '4',
+        name: 'Gift Crds',
+        slug: 'Gift Cards',
+        category: 'Cards',
+        image: '/images/p4.jpg',
+        price: 65,
+        countInStock: 5,
+        brand: 'Aura',
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+    ],
+  };
+  export default data;
